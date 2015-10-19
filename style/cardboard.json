@@ -2,7 +2,7 @@
     "created": 0,
     "draft": false,
     "glyphs": "mapbox://fonts/mapbox/{fontstack}/{range}.pbf",
-    "id": "light-v8",
+    "id": "cardboard-v8",
     "layers": [
         {
             "id": "background",
@@ -14,6 +14,42 @@
                 "background-pattern": "base"
             },
             "type": "background"
+        },
+        {
+            "filter": [
+                "all",
+                [
+                    "==",
+                    "$type",
+                    "LineString"
+                ],
+                [
+                    "in",
+                    "class",
+                    "river",
+                    "canal"
+                ]
+            ],
+            "id": "waterway",
+            "paint": {
+                "line-color": "#a0cfdf",
+                "line-width": {
+                    "base": 1.3999999999999999,
+                    "stops": [
+                        [
+                            8,
+                            0.5
+                        ],
+                        [
+                            20,
+                            15
+                        ]
+                    ]
+                }
+            },
+            "source": "mapbox",
+            "source-layer": "waterway",
+            "type": "line"
         },
         {
             "filter": [
