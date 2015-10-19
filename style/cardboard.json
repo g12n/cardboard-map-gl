@@ -21,7 +21,6 @@
                 "visibility": "visible"
             },
             "paint": {
-                "background-color": "#ddd",
                 "background-pattern": "base"
             },
             "type": "background"
@@ -76,7 +75,6 @@
                 "visibility": "visible"
             },
             "paint": {
-                "fill-color": "#8ae4ad",
                 "fill-pattern": "park"
             },
             "source": "mapbox",
@@ -89,7 +87,6 @@
                 "visibility": "visible"
             },
             "paint": {
-                "fill-color": "#0af",
                 "fill-pattern": "water"
             },
             "source": "mapbox",
