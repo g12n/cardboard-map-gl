@@ -3,6 +3,17 @@
     "draft": false,
     "glyphs": "mapbox://fonts/mapbox/{fontstack}/{range}.pbf",
     "id": "cardboard-v8",
+    "modified": 0,
+    "name": "Cardboard Map",
+    "owner": "g12n",
+    "sources": {
+        "mapbox": {
+            "type": "vector",
+            "url": "mapbox://mapbox.mapbox-streets-v6"
+        }
+    },
+    "sprite": "style/sprite",
+    "version": 8,
     "layers": [
         {
             "id": "background",
@@ -85,16 +96,5 @@
             "source-layer": "water",
             "type": "fill"
         }
-    ],
-    "modified": 0,
-    "name": "Cardboard Map",
-    "owner": "g12n",
-    "sources": {
-        "mapbox": {
-            "type": "vector",
-            "url": "mapbox://mapbox.mapbox-streets-v6"
-        }
-    },
-    "sprite": "style/sprite",
-    "version": 8
+    ]
 }
