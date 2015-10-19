@@ -1,0 +1,96 @@
+{
+    "created": 0,
+    "draft": false,
+    "glyphs": "mapbox://fonts/mapbox/{fontstack}/{range}.pbf",
+    "id": "cardboard-v8",
+    "modified": 0,
+    "name": "Cardboard Map",
+    "owner": "g12n",
+    "sources": {
+        "mapbox": {
+            "type": "vector",
+            "url": "mapbox://mapbox.mapbox-streets-v6"
+        }
+    },
+    "version": 8,
+    "layers": [
+        {
+            "id": "background",
+            "layout": {
+                "visibility": "visible"
+            },
+            "paint": {
+                "background-color": "#ddd"
+            },
+            "type": "background"
+        },
+        {
+            "filter": [
+                "all",
+                [
+                    "==",
+                    "$type",
+                    "LineString"
+                ],
+                [
+                    "in",
+                    "class",
+                    "river",
+                    "canal"
+                ]
+            ],
+            "id": "waterway",
+            "paint": {
+                "line-color": "#a0cfdf",
+                "line-width": {
+                    "base": 1.3999999999999999,
+                    "stops": [
+                        [
+                            8,
+                            0.5
+                        ],
+                        [
+                            20,
+                            15
+                        ]
+                    ]
+                }
+            },
+            "source": "mapbox",
+            "source-layer": "waterway",
+            "type": "line"
+        },
+        {
+            "filter": [
+                "all",
+                [
+                    "==",
+                    "class",
+                    "park"
+                ]
+            ],
+            "id": "landuse_park",
+            "layout": {
+                "visibility": "visible"
+            },
+            "paint": {
+                "fill-color": "#8ae4ad"
+            },
+            "source": "mapbox",
+            "source-layer": "landuse",
+            "type": "fill"
+        },
+        {
+            "id": "water",
+            "layout": {
+                "visibility": "visible"
+            },
+            "paint": {
+                "fill-color": "#0af"
+            },
+            "source": "mapbox",
+            "source-layer": "water",
+            "type": "fill"
+        }
+    ]
+}
